@@ -1,0 +1,17 @@
+t = int(input())
+
+for e in range(t):
+    
+    
+    num = input()
+    l = []
+    
+    for i in range(len(num)-1):
+        n = num
+        add = int(n[i]) + int(n[i+1])
+        
+        n = n[:i]+str(add)+n[i+2:]
+        l.append(int(n))
+    
+    l.sort(reverse = True)
+    print(l[0])
